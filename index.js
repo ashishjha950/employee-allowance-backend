@@ -15,7 +15,9 @@ dbConnect()
 app.use("/allowances", allowanceRoutes);
 app.use("/user",userRoutes);
 
-
+app.get('/', (req, res) => {
+    res.send("Welcome to the Travel Allowance API");
+});
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
