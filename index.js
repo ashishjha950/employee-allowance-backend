@@ -16,7 +16,7 @@ app.use("/allowances", allowanceRoutes);
 app.use("/user",userRoutes);
 
 app.get('/', (req, res) => {
-    res.send("Welcome to the Travel Allowance API");
+    res.send("Welcome to the Travel Allowance API   use /allowances for allowance requests and /user for user management");
 });
 
 const PORT = process.env.PORT || 3000;
